@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <?php include "includes/scripts.php"; ?>
+    <title>Nueva Venta</title>
+</head>
+<body>
+    <!-- Tu código HTML existente -->
+    <section id="container">
+        <!-- Tu contenido existente -->
+        <div class="data_venta">
+            <!-- Tu contenido existente -->
+            <table class="tbl_venta table_venta">
+                <tr>
+                    <td colspan="2">
+                        <input type="number" name="numero_ingresado" id="numero_ingresado" placeholder="Ingrese un número mayor a 0">
+                        <button onclick="verificarNumero()">Verificar</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- Otro contenido existente -->
+    </section>
+
+    <!-- Tu código JavaScript existente -->
+    <script type="text/javascript">
+        function verificarNumero() {
+            var numero = parseFloat(document.getElementById('numero_ingresado').value);
+            if (numero > 0) {
+                alert('El número ingresado es mayor a 0.');
+            } else {
+                alert('Por favor, ingrese un número mayor a 0.');
+            }
+        }
+    </script>
+</body>
+</html>
